@@ -45,6 +45,24 @@ a:hover {
   border-color: var(--primary);
 }
 
+h1 {
+  color: var(--highlight-secondary);
+  font-size: 1.5em;
+}
+
+.heading {
+  background-color: var(--secondary);
+  display: block;
+  margin: 0;
+  padding: .5em;
+  margin-block-end: .5em;
+}
+
+.space {
+  background: var(--highlight-primary);
+  padding: .1em;
+  color: #050840;
+}
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
@@ -88,6 +106,39 @@ a:nth-of-type(12) {
 
 /* Jouw animaties */
 
+/* pop-up */
+.pop-up {
+  position: fixed;
+  background: var(--highlight-primary);
+  padding: 1em;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+  z-index: 2;
+  box-shadow: var(--secondary) 0px 22px 70px 4px;
+  display: none;
+}
+
+.pop-up-show {
+  display: block;
+
+}
+
+.pop-up h1, .pop-up p, h1  {
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+.pop-up p {
+  font-size: .7em;
+}
+
+.control-codes {
+  background-color: var(--highlight-secondary);
+  padding: .1em .2em .1em .2em;
+  font-weight: 700;
+}
 /* Animatie 1 */
 a:nth-of-type(1) {
   transition: .5s .1s ease;
@@ -105,7 +156,7 @@ color: wheat;
 /* Animatie 2 */
 .passion {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -120,7 +171,7 @@ color: wheat;
 /* Animatie 3 */
 .gradient-background{
   background: linear-gradient(#e66465, #9198e5);  
-
+  display: inline-table;
 
   & a:nth-of-type(3) {
     background: none;
@@ -129,3 +180,14 @@ color: wheat;
 
 /* Animatie 4 */
 
+a:nth-of-type(4) {
+  transition: 1.5s .5s ease;
+}
+
+.rotation {
+  transition: 1s 0s ease;
+  color: var(--highlight-secondary);
+  font-weight: 700;
+  font-size: 1.5em;
+  transform: rotateY(1turn);
+}

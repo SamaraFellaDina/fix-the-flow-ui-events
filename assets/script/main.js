@@ -7,6 +7,21 @@ function jumpHandler() {
   interaction.classList.toggle('jump')
 }
 
+// pop-up
+let popUp = document.querySelector(".pop-up")
+
+document.addEventListener("keydown", space, false);
+
+function space(e) {
+    if (e.key === " ") {
+
+    popUp.classList.toggle("pop-up-show");
+    e.preventDefault();
+
+  }
+}
+
+
 // Animatie 1
 let Frontend = document.querySelector("a:nth-of-type(1)")
 
@@ -38,3 +53,14 @@ function doSomething(e) {
 }
 
 // animatie 4
+
+let development = document.querySelector("a:nth-of-type(4)")
+
+document.addEventListener("keydown", devent, false);
+
+function devent(e) {
+    if (e.key === "d") {
+
+    development.classList.toggle("rotation");
+  }
+}
