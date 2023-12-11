@@ -30,10 +30,11 @@ passion.classList.toggle("passion-show");
 let and = document.querySelector("a:nth-of-type(3)")
 let html = document.querySelector("html")
 
-document.addEventListener("keydown", checkKeyPressed, false);
+and.addEventListener("dblclick", doSomething, false);
 
-function checkKeyPressed(e) {
-	if (e.key === 65) {
-		alert("The 'a' key is pressed.");
-	}
+function doSomething(e) {
+    console.log("Mouse clicked on something...twice!");
+    html.classList.toggle("gradient-background")
 }
+
+// animatie 4

@@ -17,6 +17,7 @@
 html {
   height: 100%;
   background: var(--secondary);
+  transition: 1s .5s ease;
 }
 
 body {
@@ -118,9 +119,13 @@ color: wheat;
 
 /* Animatie 3 */
 .gradient-background{
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#e66465, #9198e5);  
+
 
   & a:nth-of-type(3) {
     background: none;
   }
 }
+
+/* Animatie 4 */
+
