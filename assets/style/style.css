@@ -313,3 +313,37 @@ section a {
       rotate: 6turn;
     }
   }
+
+/* animatie 9 */
+.section-rock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border-width: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .the-rock {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+.the-rock-show {
+  display: block;
+}
+
+  .rock {
+    display: none;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .rock-show {
+    display: block;
+  }

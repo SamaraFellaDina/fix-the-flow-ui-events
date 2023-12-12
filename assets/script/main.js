@@ -4,7 +4,7 @@ interaction.addEventListener('click', jumpHandler)
 interaction.addEventListener('animationend', jumpHandler)
 
 function jumpHandler() {
-  interaction.classList.toggle('jump')
+  interaction.classList.toggle('jump');
 }
 
 // pop-up
@@ -137,4 +137,23 @@ function trioclick(e) {
       fix.classList.toggle("unfixed");
       clickCount = 0;
     }
+}
+
+// animatie 9
+
+let the = document.querySelector("a:nth-of-type(7)")
+let rockTitle = document.querySelector(".rock")
+let rockImg = document.querySelector(".the-rock")
+
+document.addEventListener("keydown", devent, false);
+
+function devent(e) {
+    if (e.key === "r") {
+
+    the.classList.toggle("section-rock");
+    rockTitle.classList.toggle("rock-show");
+    rockImg.classList.toggle("the-rock-show");
+
+
+  }
 }
