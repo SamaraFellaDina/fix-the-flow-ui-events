@@ -151,7 +151,6 @@ color: wheat;
   color: wheat;
   border-radius: 2em;
   transition: .5s .1s ease;
-
 }
 
 /* Animatie 2 */
@@ -220,7 +219,7 @@ section a {
 /* animatie 7 */
 
 .brrrrr {
-  animation: socold 2s ease;
+  animation: socold 1.5s ease;
 }
 
 @keyframes socold {
@@ -296,4 +295,21 @@ section a {
   
 }
 
-    
+  /* animatie 8 */
+  .unfixed {
+    transition: 5s .2s ease;
+    animation: freefall 2s ease;
+    position: absolute;
+  }
+
+  @keyframes freefall {
+    0%{
+      margin-top: 0em;
+      rotate: 3turn;
+      }
+
+    75%{
+      margin-top: 40em; 
+      rotate: 6turn;
+    }
+  }

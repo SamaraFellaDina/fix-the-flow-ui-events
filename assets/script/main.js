@@ -121,3 +121,20 @@ function coldevent(e) {
 
 // Log a message for testing
 console.log("skewing enzo");
+
+
+// animatie 8
+let fix = document.querySelector("a:nth-of-type(6)")
+let clickCount = 0;
+
+fix.addEventListener("click", trioclick, false);
+
+function trioclick(e) {
+  clickCount++;
+
+    if (clickCount === 3) {
+      console.log("Mouse clicked on something...3!");
+      fix.classList.toggle("unfixed");
+      clickCount = 0;
+    }
+}
