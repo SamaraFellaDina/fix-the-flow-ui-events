@@ -64,3 +64,17 @@ function devent(e) {
     development.classList.toggle("rotation");
   }
 }
+
+// animatie 5
+
+let all = document.querySelectorAll("section a");
+
+document.addEventListener("keydown", gevent, false);
+
+function gevent(e) {
+  if (e.key === "s") {
+    all.forEach(element => {
+      element.classList.toggle("show");
+    });
+  }
+}
