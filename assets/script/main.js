@@ -69,12 +69,55 @@ function devent(e) {
 
 let all = document.querySelectorAll("section a");
 
-document.addEventListener("keydown", gevent, false);
+document.addEventListener("keyup", shiftEvent, false);
 
-function gevent(e) {
-  if (e.key === "s") {
+function shiftEvent(e) {
+  if (e.keyCode === 16) {
     all.forEach(element => {
-      element.classList.toggle("show");
+      element.classList.toggle("cold");
     });
   }
 }
+
+// Animatie 6
+
+let sprint5 = document.querySelector("a:nth-of-type(5)");
+
+sprint5.addEventListener("mouseover", mousehover, false);
+
+  function mousehover(e) {
+    sprint5.classList.toggle("skew")
+  }
+
+
+  // animatie 7
+  let allAndMore = document.querySelectorAll("section a");
+
+document.addEventListener("keyup", coldevent, false);
+
+// function coldevent(e) {
+//   allAndMore[e.keyCode] = true;
+  
+//   if (allAndMore[17] && allAndMore[16]);
+
+//   allAndMore.forEach(e => {
+//     e.classList.toggle("brrrrr");
+//   });
+// }
+
+// // Log a message for testing
+// console.log("skewing enzo");
+
+
+function coldevent(e) {
+  allAndMore[e.keyCode] = true;
+  
+  if (e.key === "c") {
+
+  allAndMore.forEach(e => {
+    e.classList.toggle("brrrrr");
+  });
+}}
+
+// Log a message for testing
+console.log("skewing enzo");

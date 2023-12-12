@@ -182,8 +182,6 @@ color: wheat;
 
 /* Animatie 4 */
 
-a:nth-of-type(4) {
-}
 
 .rotation {
   transition: 1s 0s ease;
@@ -199,10 +197,103 @@ section a {
   transition: 1s .3s ease;
 }
 
-.show {
+.cold {
   background: var(--highlight-primary);
   color: var(--secondary);
   padding: 1em;
   border-radius: 2em;
   font-weight: 700;
 }
+
+/* animatie 6 */
+
+.skew {
+  transition: .5s .3s ease;
+  transform: skew(10deg, -10deg);
+  margin: .5em;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1em;
+  border-radius: 2em;
+  margin: .5em
+}
+
+/* animatie 7 */
+
+.brrrrr {
+  animation: socold 2s ease;
+}
+
+@keyframes socold {
+  0% {
+    transform: skew(-10deg, -10deg);
+    margin-left: -.5em ;
+  }
+  10% {
+    margin-left: .5em ;
+    transform: skew(10deg, 10deg);
+
+  }
+
+  20% {
+    margin-left: -.5em ;
+    transform: skew(-10deg, -10deg);
+
+  }
+
+  25% {
+    transform: skew(10deg, 10deg);
+
+  }
+
+  30% {
+    margin-left: -.5em ;
+    transform: skew(-10deg, -10deg);
+
+  }
+
+  40% {
+    margin-left: .5em ;
+    transform: skew(10deg, 10deg);
+
+
+  }
+  
+  50% {
+    transform: skew(-10deg, -10deg);
+    margin-left: -.5em ;
+
+  }
+
+  60% {
+    margin-left: .5em ;
+    transform: skew(10deg, 10deg);
+
+  }
+
+  70% {
+    margin-left: -.5em ;
+    transform: skew(-10deg, -10deg);
+
+  }
+
+  80% {
+    margin-left: .5em ;
+    transform: skew(10deg, 10deg);
+
+  }
+  
+  90% {
+    margin-left: -.5em ;
+    transform: skew(-10deg, -10deg);
+
+  }
+  
+  100% {
+    transform: skew(0);
+    margin-left: .0 ;
+
+  }
+  
+}
+
+    
