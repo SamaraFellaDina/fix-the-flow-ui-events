@@ -58,13 +58,12 @@ let development = document.querySelector("a:nth-of-type(4)")
 
 document.addEventListener("keydown", devent, false);
 
-function devent(e) {
-    if (e.key === "d") {
+function devent(event) {
+  if (event.key === "d") {
+    console.log("d")
 
-    development.classList.toggle("rotation");
-  }
-}
-
+  development.classList.toggle("rotation");
+  }}
 // animatie 5
 
 let all = document.querySelectorAll("section a");
@@ -145,9 +144,9 @@ let the = document.querySelector("a:nth-of-type(7)")
 let rockTitle = document.querySelector(".rock")
 let rockImg = document.querySelector(".the-rock")
 
-document.addEventListener("keydown", devent, false);
+document.addEventListener("keydown", tevent, false);
 
-function devent(e) {
+function tevent(e) {
     if (e.key === "r") {
 
     the.classList.toggle("section-rock");
@@ -157,3 +156,20 @@ function devent(e) {
 
   }
 }
+
+// animatie 10
+// let flow = document.querySelector("a:nth-of-type(8)")
+
+// flow.addEventListener("keyup", fevent, false);
+
+
+// function fevent(e) {
+//   flow[e.keyCode] = true;
+  
+//   if (flow[90] && flow[88]);
+//   console.log("z and x are pressed!")
+
+//   flow.forEach(e => {
+//     e.classList.toggle("round");
+//   });
+// }
