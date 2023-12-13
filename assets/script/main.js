@@ -26,7 +26,7 @@ function space(e) {
 let Frontend = document.querySelector("a:nth-of-type(1)")
 
 Frontend.addEventListener("click", function() {
-Frontend.classList.toggle("active1");
+Frontend.classList.toggle("bigger");
 }); 
 
 // Animatie 2 
